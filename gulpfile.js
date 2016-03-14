@@ -21,7 +21,7 @@ gulp.task('hello', function() {
 
 // compile css
 gulp.task('css', function() {
-  gulp.src('./src/css/styles.css')
+  gulp.src('src/css/styles.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -34,6 +34,6 @@ gulp.task('css', function() {
 gulp.task('default', ['css'])
 
 // watch files for updates
-gulp.task('watch', function() {
+gulp.task('watch', ['css'], function() {
   gulp.watch('src/css/**/*.css', ['css'])
 })
