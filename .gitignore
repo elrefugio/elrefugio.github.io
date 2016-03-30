@@ -34,3 +34,6 @@ node_modules
 
 # compiled sass
 dist/styles.css
+
+#sync dir
+.sync

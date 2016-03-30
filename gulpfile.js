@@ -35,5 +35,5 @@ gulp.task('default', ['css'])
 
 // watch files for updates
 gulp.task('watch', ['css'], function() {
-  gulp.watch('src/css/**/*.css', ['css'])
+  gulp.watch('src/css/**/*', ['css'])
 })
