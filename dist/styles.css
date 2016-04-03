@@ -1,0 +1,280 @@
+body {
+  color: white;
+}
+
+.fmatter {
+  height: calc(100vh - 175px);
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fmatter__img {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  background-color: #424242;
+  border-bottom: 7px solid #1976d2;
+  justify-content: space-between;
+  =: 0 10px
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  font-size: 19px;
+}
+
+
+.nav__link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav__linktxt {
+    margin: auto;
+}
+
+.nav__link-active {
+    background-color: #2c5e86;
+}
+
+body {
+    font-family: avenir next;
+    font-weight: 300;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__title {
+    font-weight: 400;
+    margin: 0 30px;
+}
+
+.nav__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__link:hover {
+    background-color: #2C5E86 !important;
+}
+
+.nav__links:hover .nav__link-active {
+    background-color: transparent;
+}
+
+.nav__link > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav__link:hover > a {
+}
+
+
+.stack-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.fmatter__imgc {
+    background-image: url(img/lakehdr.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fmatter__imgl {
+    flex-direction: row;
+    align-items: center;
+}
+
+.fmatter__txtl {
+}
+
+.fmatter__txtc h1 {
+    font-size: 60;
+    font-weight: 100;
+    margin: -9px;
+}
+
+.fmatter__txtc h2 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.fmatter__txtc {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fmatter__button {
+    /* background-color: rgba(0,0,0,0.1); */
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 30px;
+    font-size: 20px;
+    padding: 9px;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: underline;
+    color: blue;
+}
+
+.rfea__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.rfea {
+    display: flex;
+    background-color: #2C5E86;
+    height: 200px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.21) 100%);
+    background-size: 100% 19%;
+    background-repeat: no-repeat;
+    background-opacity: 20%;
+    margin-bottom: 30px;
+}
+
+.rfea h4 {
+    font-size: 33px;
+    margin: 35px 0;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+}
+
+.imgtxt {
+    display: flex;
+    color: black;
+    height: 350px;
+    margin-bottom: 132px;
+}
+
+.imgtxt__half {
+    width: 50%;
+    display: flex;
+}
+
+.imgtxt__imgc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+img.imgtxt__img {
+    width: 100%;
+}
+
+.imgtxt__txtc {
+    margin: auto;
+    width: 75%;
+}
+
+.imgtxt__img-rotccw {
+}
+
+.imgtxt__img-rotcw {
+}
+
+.imgtxt__half-img {
+    width: 65%;
+}
+
+.imgtxt__imgc-lr {
+    display: flex;
+    align-items: flex-end;
+}
+
+.imgtxt-upper .imgtxt__img {transform: rotate(-1deg) translate(-4px, 0px);}
+
+.imgtxt-lower .imgtxt__img {transform: rotate(2deg) translate(9px, 0px);}
+
+.imgtxt-lower .imgtxt__imgc {
+    align-items: flex-end;
+}
+
+.imgtxt-upper {
+}
+
+.pscr {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+}
+
+.pscr__imgc {
+    height: 500px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.pscr__img {
+    height: 100%;
+    background-image: url(img/mtnpano-1.jpg);
+    background-size: auto 100%;
+    width: 24000100000000px;
+    animation-name: pano;
+    animation-duration: 1000000000000s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    animation-timing-function: linear;
+}
+
+@keyframes pano {
+  from {
+    left: 0;
+  }
+  to {
+    left: -24000000000000px;
+  }
+}
