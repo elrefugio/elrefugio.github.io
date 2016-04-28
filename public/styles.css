@@ -66,6 +66,7 @@ body {
     padding-top: 60px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .nav__title {
@@ -125,7 +126,7 @@ body {
 }
 
 .fmatter__txtc h1 {
-    font-size: 60;
+    font-size: 75px;
     font-weight: 100;
     margin: -9px;
 }
@@ -143,18 +144,13 @@ body {
 }
 
 .fmatter__button {
-    /* background-color: rgba(0,0,0,0.1); */
-    border: 1px solid white;
-    border-radius: 10px;
+    background-color: #1976D2;
+    border: 2px solid white;
     margin: 30px;
     font-size: 20px;
-    padding: 9px;
-    border: none;
-    background-color: transparent;
-    font-weight: 500;
-    font-size: 25px;
-    text-decoration: underline;
-    color: blue;
+    padding: 6px 15px;
+    font-weight: 100;
+    border-radius: 10px;
 }
 
 .rfea__list {
@@ -248,10 +244,11 @@ img.imgtxt__img {
     flex-direction: column;
     color: black;
     align-items: center;
+    margin-bottom: 35px;
 }
 
 .pscr__imgc {
-    height: 500px;
+    height: 300px;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -261,20 +258,135 @@ img.imgtxt__img {
 .pscr__img {
     height: 100%;
     background-image: url(img/mtnpano-1.jpg);
-    background-size: auto 100%;
-    width: 24000100000000px;
-    animation-name: pano;
-    animation-duration: 1000000000000s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    animation-timing-function: linear;
+    background-size: cover;
+    width: 100%;
+    /*animation-name: pano;*/
+    /*animation-duration: 1000000000000s;*/
+    /*animation-iteration-count: infinite;*/
+    /*position: absolute;*/
+    /*animation-timing-function: linear;*/
 }
 
-@keyframes pano {
+/*@keyframes pano {
   from {
     left: 0;
   }
   to {
     left: -24000000000000px;
   }
+}*/
+
+
+.pscr__title {
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.imgtxt__txtc h3 {
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+}
+
+.about__row {
+    display: flex;
+    width: 100%;
+}
+
+.about__half {
+    width: 50%;
+    display: flex;
+}
+
+.about img {
+    width: 83%;
+    margin: auto;
+}
+
+.about__half-left {
+    align-items: center;
+}
+
+.about__half-right {
+    flex-direction: column;
+}
+
+.about__textc {
+    margin: auto;
+}
+
+.about h1 {
+    font-weight: 400;
+}
+
+
+p.pscr__txt {width: 50%;}
+
+section.acts {
+}
+
+.acts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h2.acts__title {
+    font-weight: 400;
+    font-size: 35px;
+    margin: 15px auto;
+}
+
+.acts__images {
+    width: 100%;
+    column-gap: 0;
+    column-count: 3;
+}
+
+img.acts__img {
+    width: 100%;
+}
+
+.acts__titlec {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.44);
+    display: flex;
+}
+
+section.book {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: hsla(210,11%,74%,1); */
+    margin-bottom: 4em;
+}
+
+.book h2 {
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.book__contact {
+    display: flex;
+}
+
+ul.book__phones {
+    list-style: none;
+    border-right: 1px solid black;
+    padding-right: 25px;
+}
+
+ul.book__links {
+    list-style: none;
+    padding-left: 25px;
 }
