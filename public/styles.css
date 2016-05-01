@@ -360,6 +360,7 @@ img.acts__img {
     top: 0;
     background-color: rgba(0, 0, 0, 0.44);
     display: flex;
+    z-index: 1;
 }
 
 section.book {
@@ -389,4 +390,29 @@ ul.book__phones {
 ul.book__links {
     list-style: none;
     padding-left: 25px;
+}
+
+.acts__imgc {
+    position: relative;
+}
+
+.acts__captc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(0,0,0,0.40);
+    transition: all 0.2s linear;
+    opacity: 0;
+}
+
+.acts__capt {
+    margin: auto;
+    font-size: 1.8em;
+}
+
+.acts__captc:hover {
+    opacity: 1;
 }

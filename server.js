@@ -8,6 +8,6 @@ app.use(morgan('dev'))
 
 app.use(serveStatic(__dirname))
 
-var listenPort = 3000
+var listenPort = process.env.PORT || 3000
 app.listen(listenPort)
-console.log(`listening on *:${3000}`)
+console.log(`listening on *:${listenPort}`)
