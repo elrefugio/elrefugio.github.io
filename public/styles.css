@@ -175,7 +175,6 @@ body {
     background-size: 100% 19%;
     background-repeat: no-repeat;
     background-opacity: 20%;
-    margin-bottom: 30px;
 }
 
 .rfea h4 {
@@ -415,4 +414,21 @@ ul.book__links {
 
 .acts__captc:hover {
     opacity: 1;
+}
+
+section.plainp {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.plainp h1 {
+    font-weight: 100;
+}
+
+section.plainp p {
+    width: 800px;
+    max-width: 100%;
 }
