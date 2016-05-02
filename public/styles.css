@@ -432,3 +432,7 @@ section.plainp p {
     width: 800px;
     max-width: 100%;
 }
+
+.map {
+    height: 400px;
+}
