@@ -1,6 +1,17 @@
+/* custom css definitions */
+
+/* sizes */
+.fillx {
+  height: 100%;
+}
 .h60px {
   height: 60px;
 }
+.h80vh {
+  height: 80vh;
+}
+
+/* colors (refer to foreground unless prefixed with "bg-"*/
 .color-baseline {
   border-bottom: 7px solid #1976d2;
 }
@@ -10,18 +21,19 @@
 .bg-darkblue {
   background-color: #2c5e86;
 }
-.fillx {
-  height: 100%;
+.white {
+  color: white;
 }
+
+/* media queries */
 ul:hover > .nobg-parent-hover {
   background-color: transparent;
 }
 .bg-dkblue-hov\!:hover {
   background-color: #2c5e86 !important;
 }
+
+/* animations */
 .transition-05s {
   transition: all 0.5s;
-}
-.white {
-  color: white;
 }
