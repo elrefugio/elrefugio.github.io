@@ -438,3 +438,15 @@ section.plainp p {
 .map {
     height: 400px;
 }
+
+.book h3 a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.4em;
+    color: blue;
+    transition: text-decoration 0.5s;
+}
+
+.book h3 a:hover {
+    text-decoration: underline;
+}
