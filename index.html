@@ -241,21 +241,37 @@
   </nav>
 </section>
 
-
-<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='preload' onload="this.rel='stylesheet'"/>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='preload' id="mboxcss"/>
 <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js' id="mboxjs" async="true"></script>
+
 <script>
   var mboxjs = document.getElementById('mboxjs')
+  var mboxcss = document.getElementById('mboxcss')
+
+  var loaded = []
+
+  mboxcss.onload = function() {
+    mboxcss.rel = 'stylesheet'
+    loaded['css'] = true
+    checkLoadingFinished()
+  }
   mboxjs.onload = function() {
-    // Provide your access token
-    L.mapbox.accessToken = 'pk.eyJ1IjoiZ3JlZW5mbHkiLCJhIjoiZjNlNWVmZDM1ODljZGRiZmVmNWZhYmFmNDk5YTA5YzQifQ.yNJKHV3yNnwcV5pNBTIjtA';
-    // Create a map in the div #map
-    var map = L.mapbox.map('map', 'mapbox.streets', {
-      scrollWheelZoom: false,
-      center: [-43.1966667141764, -71.85762405395508],
-      zoom: 12
-    })
-    L.marker([-43.18932, -71.99959]).addTo(map)
+    loaded['js'] = true
+    checkLoadingFinished
+  }
+
+  checkLoadingFinished = function() {
+    if (loaded.css && loaded.js) {
+      // Provide your access token
+      L.mapbox.accessToken = 'pk.eyJ1IjoiZ3JlZW5mbHkiLCJhIjoiZjNlNWVmZDM1ODljZGRiZmVmNWZhYmFmNDk5YTA5YzQifQ.yNJKHV3yNnwcV5pNBTIjtA';
+      // Create a map in the div #map
+      var map = L.mapbox.map('map', 'mapbox.streets', {
+        scrollWheelZoom: false,
+        center: [-43.1966667141764, -71.85762405395508],
+        zoom: 12
+      })
+      L.marker([-43.18932, -71.99959]).addTo(map)
+    }
   }
 </script>
 
