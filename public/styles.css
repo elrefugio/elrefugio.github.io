@@ -437,6 +437,7 @@ section.plainp p {
 
 .map {
     height: 400px;
+    position: relative;
 }
 
 .book h3 a {
@@ -449,4 +450,33 @@ section.plainp p {
 
 .book h3 a:hover {
     text-decoration: underline;
+}
+
+nav.footer {
+    background-color: rgba(66,66,66,0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+nav.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav.footer ul li {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+div#map {
+    height: 100%;
+    width: 100%;
+}
+
+.leaflet-bottom {
+    margin-bottom: 50px;
 }
