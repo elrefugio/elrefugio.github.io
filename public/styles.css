@@ -106,7 +106,7 @@ body {
 }
 
 .fmatter__imgc {
-    background-image: url(img/lakehdr.jpg);
+    background-image: url(img/fullscreen/lakehdr.jpg);
     height: 100%;
     width: 100%;
     background-position: center;
@@ -253,7 +253,7 @@ img.imgtxt__img {
 
 .pscr__img {
     height: 100%;
-    background-image: url(img/mtnpano-1.jpg);
+    background-image: url(img/widepano/mtnpano-1.jpg);
     background-size: cover;
     width: 100%;
     /*animation-name: pano;*/
